@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Apple Clone</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      background-color: #f5f5f7;
+      color: #1d1d1f;
+    }
+    /* Custom scrollbar for horizontal scroll sections */
+    .scrollbar-hide::-webkit-scrollbar {
+      display: none;
+    }
+    .scrollbar-hide {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
+</head>
+<body class="antialiased">
+
+  <!-- Header -->
+  <header class="fixed top-0 left-0 right-0 bg-white bg-opacity-90 backdrop-blur-md z-50 shadow-sm">
+    <nav class="max-w-7xl mx-auto px-6 sm:px-12 flex items-center justify-between h-16">
+      <a href="#" class="text-2xl font-bold text-gray-900"></a>
+      <ul class="hidden md:flex space-x-8 text-sm font-semibold text-gray-700">
+        <li><a href="#" class="hover:text-black transition">Mac</a></li>
+        <li><a href="#" class="hover:text-black transition">iPad</a></li>
+        <li><a href="#" class="hover:text-black transition">iPhone</a></li>
+        <li><a href="#" class="hover:text-black transition">Watch</a></li>
+        <li><a href="#" class="hover:text-black transition">AirPods</a></li>
+        <li><a href="#" class="hover:text-black transition">TV & Home</a></li>
+        <li><a href="#" class="hover:text-black transition">Only on Apple</a></li>
+        <li><a href="#" class="hover:text-black transition">Accessories</a></li>
+        <li><a href="#" class="hover:text-black transition">Support</a></li>
+      </ul>
+      <div class="flex items-center space-x-6 text-gray-700">
+        <button aria-label="Search" class="hover:text-black transition">
+          <i class="fas fa-search text-lg"></i>
+        </button>
+        <button aria-label="Shopping Bag" class="hover:text-black transition">
+          <i class="fas fa-shopping-bag text-lg"></i>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="pt-20">
+
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-b from-gray-100 to-white">
+      <div class="max-w-7xl mx-auto px-6 sm:px-12 py-20 text-center">
+        <h1 class="text-5xl font-extrabold tracking-tight mb-4">iPhone 14 Pro</h1>
+        <p class="text-xl text-gray-600 mb-8">Pro. Beyond.</p>
+        <a href="#" class="inline-block bg-black text-white px-8 py-3 rounded-full font-semibold hover:bg-gray-900 transition">Learn more</a>
+        <a href="#" class="inline-block ml-6 text-black font-semibold hover:underline">Buy</a>
+      </div>
+      <div class="mt-12">
+        <img src="https://www.apple.com/v/iphone-14-pro/a/images/overview/hero/hero_static__e9xv6p6xq0qe_large_2x.jpg" alt="iPhone 14 Pro" class="mx-auto max-w-full h-auto rounded-xl shadow-lg" />
+      </div>
+    </section>
+
+    <!-- Product Highlights -->
+    <section class="max-w-7xl mx-auto px-6 sm:px-12 py-16 grid grid-cols-1 md:grid-cols-3 gap-12">
+      <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
+        <img src="https://www.apple.com/v/mac/home/ai/images/overview/hero/macbook_air__d1xq6xq6xq6e_large_2x.jpg" alt="MacBook Air" class="w-full h-48 object-cover" />
+        <div class="p-6 text-center">
+          <h2 class="text-2xl font-semibold mb-2">MacBook Air</h2>
+          <p class="text-gray-600 mb-4">Power. It's in the Air.</p>
+          <a href="#" class="text-blue-600 font-semibold hover:underline">Learn more</a>
+        </div>
+      </div>
+      <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
+        <img src="https://www.apple.com/v/ipad/home/ai/images/overview/hero/ipad_pro__d1xq6xq6xq6e_large_2x.jpg" alt="iPad Pro" class="w-full h-48 object-cover" />
+        <div class="p-6 text-center">
+          <h2 class="text-2xl font-semibold mb-2">iPad Pro</h2>
+          <p class="text-gray-600 mb-4">Supercharged by M2 chip.</p>
+          <a href="#" class="text-blue-600 font-semibold hover:underline">Learn more</a>
+        </div>
+      </div>
+      <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
+        <img src="https://www.apple.com/v/watch/home/ai/images/overview/hero/apple_watch_series_8__d1xq6xq6xq6e_large_2x.jpg" alt="Apple Watch Series 8" class="w-full h-48 object-cover" />
+        <div class="p-6 text-center">
+          <h2 class="text-2xl font-semibold mb-2">Apple Watch Series 8</h2>
+          <p class="text-gray-600 mb-4">A healthy leap ahead.</p>
+          <a href="#" class="text-blue-600 font-semibold hover:underline">Learn more</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-100 border-t border-gray-300 mt-20 py-12">
+      <div class="max-w-7xl mx-auto px-6 sm:px-12 text-center text-gray-600 text-sm">
+        <p>Copyright © 2024 Apple Inc. All rights reserved.</p>
+        <p class="mt-2">
+          <a href="#" class="hover:underline">Privacy Policy</a> | 
+          <a href="#" class="hover:underline">Terms of Use</a> | 
+          <a href="#" class="hover:underline">Sales and Refunds</a> | 
+          <a href="#" class="hover:underline">Legal</a> | 
+          <a href="#" class="hover:underline">Site Map</a>
+        </p>
+      </div>
+    </footer>
+
+  </main>
+
+</body>
+</html>
